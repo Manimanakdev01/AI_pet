@@ -1,21 +1,16 @@
 streamlit
-streamlit-ace
 
-pyrebase4
-firebase-admin
 
-openai
-google-generativeai
+
+
+
 
 pyserial
 
-Pillow
-qrcode
+
 
 requests
-python-dotenv
+
 
 numpy
 opencv-python
-
-ollama
