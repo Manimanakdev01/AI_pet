@@ -5,7 +5,7 @@ from io import BytesIO
 
 st.title("📸 Camera Test")
 
-url = "http://192.168.29.248/capture"
+url = "http://192.168.29.248/stream"
 
 if st.button("GET IMAGE"):
     response = requests.get(url)
