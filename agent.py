@@ -1,8 +1,13 @@
 import streamlit as st
+import requests
+from PIL import Image
+from io import BytesIO
 
-st.title("📸 ESP32-CAM LIVE STREAM")
+st.title("📸 Camera Test")
 
-ip = st.text_input("Enter Camera Stream URL", "http://192.168.29.248:81/stream")
+url = "http://192.168.29.248/capture"
 
-if st.button("START"):
-    st.image(ip)
+if st.button("GET IMAGE"):
+    response = requests.get(url)
+    img = Image.open(BytesIO(response.content))
+    st.image(img)
