@@ -2,7 +2,7 @@ streamlit
 
 
 
-
+libgl1
 
 
 pyserial
